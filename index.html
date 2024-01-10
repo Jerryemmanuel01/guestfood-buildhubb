@@ -35,13 +35,97 @@
 
     <!-- SECOND SEC -->
 
-    <section class="dishes">
-        
+    <section class="dishes-sec">
+      <div class="dishes-header-wrapper">
+        <div class="dishes-header">
+          <h1>OUR SPECIAL DISHES</h1>
+        </div>
+        <p class="dishes-header-p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+          obcaecati aut, vel quos libero nostrum quisquam amet ea. Similique eum
+          tempora officia nisi aliquid eaque voluptatem eveniet, nesciunt at
+          cum.
+        </p>
+      </div>
+      <section class="slide-container">
+        <div class="carosel-wrapper">
+          <div class="slider">
+            <div id="slide-1">
+              <img src="./assets/special-dishes-1.png" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3 class="price">price</h3>
+            </div>
+            <div id="slide-2">
+              <img src="./assets/special-dishes-2.jpg" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3 class="price">price</h3>
+            </div>
+            <div id="slide-3">
+              <img src="./assets/special-dishes-3.jpg" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3 class="price">price</h3>
+            </div>
+            <div id="slide-4">
+              <img src="./assets/special-dishes-4.jpg" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3 class="price">price</h3>
+            </div>
+            <div id="slide-5">
+              <img src="./assets/special-dishes-5.png" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3 class="price">price</h3>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <a id="autolink" href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+          </div>
+          <a href="#" onclick="changePrev()" class="arrow left" id="leftkey"
+            >&#60;</a
+          >
+          <a href="#" onclick="changeNext()" class="arrow" id="rightkey"
+            ><strong>&#62;</strong></a
+          >
+        </div>
+      </section>
     </section>
 
     <script
       src="https://kit.fontawesome.com/8549069173.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var counter = 1;
+      let left = document.getElementById("leftkey");
+      let right = document.getElementById("rightkey");
+
+      function changeNext() {
+        counter++;
+        right.href = `#slide-${counter}`;
+        if (counter > 4) {
+          counter = 0;
+        }
+      }
+      function changePrev() {
+        if (counter === 1) {
+          counter = 6;
+          counter--;
+          left.href = `#slide-${counter}`;
+        }
+        else if (counter > 1 && counter < 6) {
+          counter--;
+          left.href = `#slide-${counter}`;
+        }
+      }
+    </script>
   </body>
 </html>
