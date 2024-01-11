@@ -272,7 +272,7 @@ body {
   background-image: url(./assets/img-08.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 60%;
   background-attachment: fixed;
 }
 
@@ -321,3 +321,19 @@ body {
     padding: 0 10px;
   }
 }
+
+/* 
+
+ @media (min-width: 400px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+    @media (min-width: 800px) {
+        grid-template-columns: repeat(4, 1fr);
+        width: 700px;
+    }
+
+*/
