@@ -210,14 +210,14 @@ body {
   background-image: url(./assets/bg-pattern.jpg);
   padding: 15px;
 }
-.about-img-sec{
-    width: 100%;
-    margin-top: 5rem;
+.about-img-sec {
+  width: 100%;
+  margin: 5rem 0;
 }
-.about-img-sec > img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+.about-img-sec > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 .about-info {
   display: flex;
@@ -236,33 +236,65 @@ body {
   font-family: "poppins";
   font-size: 20px;
 }
-.info-txt{
-    color: rgb(150, 149, 149);
-    line-height: 1.5;
-    margin-top: 20px;
+.info-txt {
+  color: rgb(150, 149, 149);
+  line-height: 1.5;
+  margin-top: 20px;
 }
-.about-subsection{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around    ;
-    height: 25rem;
-    margin-top: 30px;
+.about-subsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 25rem;
+  margin-top: 30px;
 }
-.about-archievement{
+.about-archievement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.archievement-txt {
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 12.5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ---------DISCOUNT SEC----------- */
+
+.discount-sec {
+  width: 100%;
+  height: 300px;
+  background-image: url(./assets/img-08.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ---------CHEFS SEC----------- */
+
+.chef-sec{
+    height: 100vh;
+    width: 100%;    
+}
+.discount-heading{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    height: 100%;
+    margin-left: 10px;
+    font-family: 'poppins';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.2;
 }
-.archievement-txt{
-    font-family: 'inter';
-    font-weight: 700;
-    font-size: 12.5px;
-    margin-top: 10px;
-    text-align: center;
-}
+
 
 
 
