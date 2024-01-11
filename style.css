@@ -212,6 +212,7 @@ body {
 }
 .about-img-sec{
     width: 100%;
+    margin-top: 5rem;
 }
 .about-img-sec > img{
     width: 100%;
@@ -242,10 +243,11 @@ body {
 }
 .about-subsection{
     display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
-    justify-content: space-evenly   ;
-    height: 9rem;
+    justify-content: space-around    ;
+    height: 25rem;
     margin-top: 30px;
 }
 .about-archievement{
