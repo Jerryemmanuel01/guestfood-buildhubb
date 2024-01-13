@@ -300,6 +300,7 @@ body {
 .chef-sec {
   margin: 5rem 0;
   width: 100%;
+  height: auto;
 }
 .chef-heading {
   width: 100%;
@@ -355,8 +356,25 @@ body {
 }
 .card-info > h3{
     font-family: 'inter';
+    margin-top: 10px;
 }
-
+.card-info > p{
+    font-family: 'inter';
+    color: rgb(201, 201, 201);
+    margin-top: 5px;
+}
+.social-icons{
+  margin-top: 10px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-icons>i{
+  color: #ffcc33;
+  
+  cursor: pointer;
+}
 
 
 @media only screen and (max-width: 500px) {
