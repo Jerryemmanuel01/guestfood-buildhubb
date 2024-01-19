@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   color: white;
 }
 body {
@@ -29,6 +28,7 @@ body {
 }
 .logo-sec {
   display: flex;
+  width: 300px;
 }
 .logo-txt h2 {
   font-family: "poppins";
@@ -39,6 +39,11 @@ body {
   letter-spacing: 7.5px;
   font-size: 12.5px;
 }
+
+.nav-sec {
+  display: none;
+}
+
 .sec-1 {
   width: 100%;
   display: flex;
@@ -46,6 +51,23 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 80px;
+}
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  background-color: #ffcc33;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  
+}
+.back-to-top > a i {
+  color: #000;
+  scroll-behavior: smooth;
 }
 .main-txt {
   font-family: "poppins";
@@ -320,64 +342,65 @@ body {
   width: 100%;
 }
 .chef-heading > p {
-    width: 80%;
-    color: gray;
-    margin-top: 30px;
+  width: 80%;
+  color: gray;
+  margin-top: 30px;
 }
-.chef-card-container{
-    max-width: 1200px;
-    height: auto;
-    margin: 5rem auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 3rem;
-    padding: 0 15px;
+.chef-card-container {
+  max-width: 1200px;
+  height: auto;
+  margin: 5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+  padding: 0 15px;
 }
-.chef-card{
-    max-width: 400px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.chef-card {
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.card-img>img{
-    width: 100%;
-    height: 400px;
+.card-img > img {
+  width: 100%;
+  height: 400px;
 }
-.card-info{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.card-info > h3{
-    font-family: 'inter';
-    margin-top: 10px;
+.card-info > h3 {
+  font-family: "inter";
+  margin-top: 10px;
 }
-.card-info > p{
-    font-family: 'inter';
-    color: rgb(201, 201, 201);
-    margin-top: 5px;
+.card-info > p {
+  font-family: "inter";
+  color: rgb(201, 201, 201);
+  margin-top: 5px;
 }
-.social-icons{
+.social-icons {
   margin-top: 10px;
   width: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.social-icons>i, i{
+.social-icons > i,
+i {
   color: #ffcc33;
   cursor: pointer;
 }
 
 /* ---------CHEFS SEC----------- */
 
-.booking{
+.booking {
   width: 100%;
   height: auto;
   display: flex;
@@ -388,10 +411,10 @@ body {
   padding: 15px;
   margin: 5rem 0;
 }
-.booking-heading{
+.booking-heading {
   margin: 2rem 0;
 }
-.booking-form{
+.booking-form {
   width: 100%;
   height: auto;
   display: flex;
@@ -400,21 +423,22 @@ body {
   align-items: center;
   padding-bottom: 40px;
 }
-.name-sec{
+.name-sec {
   display: flex;
   width: 100%;
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
 }
-.fname-form, .lname-form{
+.fname-form,
+.lname-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 5px;
 }
-input{
+input {
   width: 90%;
   background: #000;
   outline: #ffcc33;
@@ -423,16 +447,15 @@ input{
   border: none;
   padding: 5px;
 }
-label{
+label {
   color: #ffcc33;
   font-family: "poppins";
   font-size: 10px;
 }
 
-
 /* ---------CHEFS SEC----------- */
 
-.contact-details{
+.contact-details {
   width: 100%;
   height: auto;
   display: flex;
@@ -440,40 +463,36 @@ label{
   gap: 30px;
   margin: 70px 0;
 }
-.contact-one-sec{
+.contact-one-sec {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
 }
-.loaction{
+.loaction {
   width: 100%;
 }
-.loaction p{
+.loaction p {
   font-size: 12px;
 }
-.location-head{
+.location-head {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.location-head h2{
-  font-family: 'poppins';
+.location-head h2 {
+  font-family: "poppins";
   font-size: 16px;
 }
-.contact-phone{
-  font-family: 'poppins';
+.contact-phone {
+  font-family: "poppins";
   font-size: 16px;
   color: #ffcc33;
 }
-.contact-icons{
+.contact-icons {
   width: 150px;
 }
-
-
-
-
 
 @media only screen and (max-width: 500px) {
   body {
@@ -488,6 +507,57 @@ label{
   }
   .home {
     padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .nav-sec {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .nav-bar {
+    padding: 0;
+  }
+  ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 50px;
+  }
+  ul li a {
+    text-decoration: none;
+    font-family: "inter";
+    font-weight: 800;
+  }
+  .home {
+    padding: 0 8rem;
+  }
+  .sec-1 {
+    align-items: start;
+    text-align: left;
+    margin-top: 80px;
+  }
+  .main-txt {
+    font-size: 60px;
+    width: 100%;
+    text-align: left;
+  }
+  .p-txt {
+    width: 450px;
+    text-align: left;
+    line-height: 1.2;
+    margin-top: 30px;
+  }
+  .dishes-header {
+    width: 520px;
+  }
+  .dishes-header-p {
+    width: 520px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home {
+    padding: 0 12rem;
   }
 }
 
