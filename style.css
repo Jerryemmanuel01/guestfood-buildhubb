@@ -61,8 +61,8 @@ body {
   margin-top: 30px;
 }
 .book-a-table {
-  width: 200px;
-  height: 50px;
+  width: 190px;
+  height: 40px;
   margin-top: 20px;
   background-color: #ffcc33;
   border: none;
@@ -71,7 +71,7 @@ body {
   font-weight: bolder;
   letter-spacing: 2px;
   color: black;
-  font-size: 17px;
+  font-size: 16px;
   border-radius: 3px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -370,9 +370,8 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.social-icons>i{
+.social-icons>i, i{
   color: #ffcc33;
-  
   cursor: pointer;
 }
 
@@ -405,7 +404,7 @@ body {
   display: flex;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 }
 .fname-form, .lname-form{
@@ -413,6 +412,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5px;
 }
 input{
   width: 90%;
@@ -422,13 +422,58 @@ input{
   border-radius: 4px;
   border: none;
   padding: 5px;
-  margin-top: 5px;
 }
 label{
   color: #ffcc33;
   font-family: "poppins";
   font-size: 10px;
 }
+
+
+/* ---------CHEFS SEC----------- */
+
+.contact-details{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 70px 0;
+}
+.contact-one-sec{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.loaction{
+  width: 100%;
+}
+.loaction p{
+  font-size: 12px;
+}
+.location-head{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.location-head h2{
+  font-family: 'poppins';
+  font-size: 16px;
+}
+.contact-phone{
+  font-family: 'poppins';
+  font-size: 16px;
+  color: #ffcc33;
+}
+.contact-icons{
+  width: 150px;
+}
+
+
+
+
 
 @media only screen and (max-width: 500px) {
   body {
