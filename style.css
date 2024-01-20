@@ -235,11 +235,11 @@ body {
   width: 100%;
   height: 70vh;
   margin: 5rem 0;
-    background-image: url(./assets/img-07.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(./assets/img-07.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    object-fit: cover;
+  object-fit: cover;
 }
 /* .about-img-sec > img {
   width: 100%;
@@ -403,7 +403,7 @@ i {
   cursor: pointer;
 }
 
-/* ---------CHEFS SEC----------- */
+/* ---------BOOKING SEC----------- */
 
 .booking {
   width: 100%;
@@ -458,7 +458,7 @@ label {
   font-size: 10px;
 }
 
-/* ---------CHEFS SEC----------- */
+/* ---------CONTACT SEC----------- */
 
 .contact-details {
   width: 100%;
@@ -473,6 +473,7 @@ label {
   height: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 30px;
 }
 .loaction {
@@ -489,6 +490,15 @@ label {
 .location-head h2 {
   font-family: "poppins";
   font-size: 16px;
+}
+
+.contact{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contact-phone {
   font-family: "poppins";
@@ -552,10 +562,11 @@ label {
     line-height: 1.2;
     margin-top: 30px;
   }
-  .dishes-header, .dishes-header-p{
+  .dishes-header,
+  .dishes-header-p {
     width: 520px;
   }
-  
+
   .about-sec {
     align-items: center;
     justify-content: space-between;
@@ -575,29 +586,42 @@ label {
   .about-info {
     width: 100%;
   }
-  .about-subsection{
+  .about-subsection {
     flex-direction: row;
     margin-top: 3rem;
     height: auto;
   }
-  .discount-sec{
+  .discount-sec {
     padding: 0 8rem;
   }
-  .chef-sec{
+  .chef-sec {
     overflow: hidden;
   }
-  .chef-heading h1, .chef-heading p, .booking-heading{
+  .chef-heading h1,
+  .chef-heading p,
+  .booking-heading {
     max-width: 520px;
     text-align: center;
   }
-  .chef-card-container{
+  .chef-card-container {
     padding: 0;
   }
-  .chef-card{
+  .chef-card {
     max-width: 200px;
   }
-  .booking-form{
-    max-width: 850px;
+  .booking-form {
+    max-width: 900px;
+  }
+  .contacts {
+    width: 520px;
+  }
+  .contact-details{
+    max-width: 900px;
+    flex-direction: row;
+    gap: 0;
+  }
+  .contact-one-sec{
+    padding: 0;
   }
 }
 
@@ -608,10 +632,13 @@ label {
   .about-sec {
     padding: 0 12rem;
   }
-  .discount-sec{
+  .discount-sec {
     padding: 0 12rem;
   }
-  .booking-form{
+  .booking-form {
+    max-width: 1000px;
+  }
+  .contact-details{
     max-width: 1000px;
   }
 }
