@@ -586,7 +586,7 @@ label {
   .chef-sec{
     overflow: hidden;
   }
-  .chef-heading h1, .chef-heading p{
+  .chef-heading h1, .chef-heading p, .booking-heading{
     max-width: 520px;
     text-align: center;
   }
@@ -595,6 +595,9 @@ label {
   }
   .chef-card{
     max-width: 200px;
+  }
+  .booking-form{
+    max-width: 850px;
   }
 }
 
@@ -608,7 +611,8 @@ label {
   .discount-sec{
     padding: 0 12rem;
   }
-  .chef-card-container{
+  .booking-form{
+    max-width: 1000px;
   }
 }
 
